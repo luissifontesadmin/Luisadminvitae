@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis Orlando Sifontes Hurtado</title>
+  <!-- Enlace al archivo CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="contenedor">
+    <header>
+      <h1>Luis Orlando Sifontes Hurtado</h1>
+      <p class="subtitulo">TSU en Análisis y Desarrollo de Sistemas en formación</p>
+    </header>
+
+    <main>
+      <!-- SECCIÓN: HABILIDADES PROFESIONALES -->
+      <section>
+        <h2>Habilidades profesionales que uso en mi desempeño</h2>
+
+        <details>
+          <summary>Windows</summary>
+          <div class="contenido-habilidad">
+            Manejo avanzado de entornos Windows: instalación y configuración de software, gestión de usuarios, solución de problemas básicos de red y mantenimiento del sistema.
+          </div>
+        </details>
+
+        <details>
+          <summary>Servicios administrativos</summary>
+          <div class="contenido-habilidad">
+            Gestión documental, atención al público, organización de archivos físicos y digitales, y apoyo en procesos administrativos internos.
+          </div>
+        </details>
+
+        <details>
+          <summary>Secretariado</summary>
+          <div class="contenido-habilidad">
+            Redacción de correspondencia, agenda de reuniones, transcripción de documentos, manejo de comunicaciones telefónicas y atención a visitantes.
+          </div>
+        </details>
+
+        <details>
+          <summary>Administración pública</summary>
+          <div class="contenido-habilidad">
+            Conocimiento de normativas y procedimientos, tramitación de expedientes, gestión de recursos públicos y orientación al ciudadano.
+          </div>
+        </details>
+      </section>
+
+      <!-- SECCIÓN: OTRAS HABILIDADES -->
+      <section>
+        <h2>Otras habilidades</h2>
+
+        <details>
+          <summary>Artes militares</summary>
+          <div class="contenido-habilidad">
+            Disciplina, liderazgo, trabajo en equipo, resistencia física y mental, y habilidades de defensa personal orientadas a la seguridad y la protección.
+          </div>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <p>Comprometido con la excelencia, la disciplina y el servicio.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Cierra automáticamente los demás acordeones al abrir uno
+    const acordeones = document.querySelectorAll('details');
+    acordeones.forEach(acordeon => {
+      acordeon.addEventListener('toggle', () => {
+        if (acordeon.open) {
+          acordeones.forEach(otro => {
+            if (otro !== acordeon) otro.open = false;
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
